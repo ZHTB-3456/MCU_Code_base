@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"c6t6_creat\startup_stm32f103x6.o"
+"c6t6_creat\main.o"
+"c6t6_creat\gpio.o"
+"c6t6_creat\stm32f1xx_it.o"
+"c6t6_creat\stm32f1xx_hal_msp.o"
+"c6t6_creat\stm32f1xx_hal_gpio_ex.o"
+"c6t6_creat\stm32f1xx_hal.o"
+"c6t6_creat\stm32f1xx_hal_rcc.o"
+"c6t6_creat\stm32f1xx_hal_rcc_ex.o"
+"c6t6_creat\stm32f1xx_hal_gpio.o"
+"c6t6_creat\stm32f1xx_hal_dma.o"
+"c6t6_creat\stm32f1xx_hal_cortex.o"
+"c6t6_creat\stm32f1xx_hal_pwr.o"
+"c6t6_creat\stm32f1xx_hal_flash.o"
+"c6t6_creat\stm32f1xx_hal_flash_ex.o"
+"c6t6_creat\stm32f1xx_hal_exti.o"
+"c6t6_creat\system_stm32f1xx.o"
+--strict --scatter "c6t6_creat\c6t6_creat.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "c6t6_creat.map" -o c6t6_creat\c6t6_creat.axf
